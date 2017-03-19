@@ -2,7 +2,7 @@
 Includes a cookbook for running a simple "hello world" website on a chef client node.
 ---
 ### Bootstrapping the Node
-This node should connect to a Chef org on boot. 
+This node should connect to a Chef org on boot.  
 **Prerequisites**
 * CentOS 7.2 node with "centos" user and `sudo` privileges.
 * ChefDK installed on the node. 
@@ -11,5 +11,7 @@ This node should connect to a Chef org on boot.
 * Public IP ADDRESS for the node. 
 * IDENTITY .pem file for the node.
 ### Procedure
-1. Execute the knife command from your workstation:  
-   `knife bootstrap ADDRESS --ssh-user centos --sudo --identity-file IDENTITY --node-name enlace-node1 --run-list 'recipe[hello_httpd]'`
+Execute the knife command from your workstation:  
+`knife bootstrap ADDRESS --ssh-user centos --sudo --identity-file IDENTITY --node-name enlace-node1 --run-list 'recipe[hello_httpd]'`  
+---
+This prepares the node for further chef client work. 
