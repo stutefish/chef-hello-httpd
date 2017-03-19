@@ -1,6 +1,5 @@
 # chef-hello-httpd
 Includes a cookbook for running a simple "hello world" website on a chef client node.
----
 ### Getting started
 There's a few things you have to do in order to make things work the way you want. 
 **Prerequisites**
@@ -18,6 +17,6 @@ This connects the chef-client on the node to your chef org. This only works if k
 ### Start chef client on boot
 On the node, add an entry to root's crontab:  
 `(crontab -l 2>/dev/null; echo "@reboot /usr/bin/chef-client") | crontab -`  
-This causes chef-client to run whenever the node starts or reboots. This will connect it to the org configured during the bootstrap. 
----
-This would be a good time to validate the chef configurations you have made, and register the node Instance as an AMI. 
+This causes chef-client to run whenever the node starts or reboots. This will connect it to the org configured during the bootstrap.  
+
+**This would be a good time to validate the chef configurations you have made, and register the node Instance as an AMI.** 
