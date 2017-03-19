@@ -16,7 +16,7 @@ On your workstation: run the knife bootstrap command against the node:
 `knife bootstrap ADDRESS --ssh-user centos --sudo --identity-file IDENTITY --node-name node1-centos --run-list 'recipe[hello_httpd]'`  
 This connects the chef-client on the node to your chef org. This only works if knife is able to find your Org's knife.rb config file on your workstation. 
 ### Start chef client on boot
-On the node, add an entry to root's crontab:
+On the node, add an entry to root's crontab:  
 `(crontab -l 2>/dev/null; echo "@reboot /usr/bin/chef-client") | crontab -`  
 This causes chef-client to run whenever the node starts or reboots. This will connect it to the org configured during the bootstrap. 
 ---
