@@ -10,5 +10,5 @@ This node should connect to a (notional) Chef org on boot.
 ---
 ### Procedure
 1. Create `/etc/chef` on the node.
-2. Create `/etc/chef/client.rb` (included in this repo)
+2. Create `/etc/chef/client.rb` (included in this repo)  
 **YOU ARE HERE**
