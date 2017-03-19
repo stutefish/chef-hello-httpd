@@ -1,7 +1,7 @@
 # chef-hello-httpd
 Includes a cookbook for running a simple "hello world" website on a chef client node.
 ### Getting started
-There's a few things you have to do in order to make things work the way you want. 
+There's a few things you have to do in order to make things work the way you want.  
 **Prerequisites**
 * CentOS 7.2 node with "centos" user and `sudo` privileges.
 * ChefDK installed on the node. 
