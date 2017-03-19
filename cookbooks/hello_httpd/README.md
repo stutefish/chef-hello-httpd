@@ -1,2 +1,4 @@
 # hello_httpd
-The thing itself. 
+* Installs httpd
+* Creates an httpd service
+* Creates a "Hello World" document
